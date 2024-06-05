@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="color: #FFA07A; font-size: 24px; font-weight: bold;">Quiz Projeto Python</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #004cb6; /* Changed background color */
+            color: #fff; /* Changed text color */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #192f8d; /* Kept the original container background color */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #fff; /* Changed the color to white for questions */
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .options li {
+            margin-bottom: 10px;
+        }
+
+        .options input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff; /* Kept the original button background color */
+            color: #fff; /* Kept the original button text color */
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3; /* Kept the original button hover background color */
+        }
+
+        .result {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 style="color: #FFA07A; font-size: 24px; font-weight: bold;">Quiz Projeto Python</h1>
+    <div class="container">
+        <h1>Quiz Projeto Python</h1>
+
+        <div class="question" id="question1">
+            <h2>Qual é a origem do nome 'Python' como nome da linguagem de programação?</h2>
+            <ul class="options">
+                <li><input type="radio" name="question1" value="option1"> Deriva da cobra do mesmo nome.</li>
+                <li><input type="radio" name="question1" value="option2"> É uma abreviação de 'Programming Your Own Tools Enhances Notoriety'.</li>
+                <li><input type="radio" name="question1" value="option3"> Foi escolhido aleatoriamente por seu criador.</li>
+                <li><input type="radio" name="question1" value="option4"> É uma homenagem ao programa de TV Monty Python's Flying Circus.</li>
+            </ul>
+        </div>
+
+        <!-- Restante das perguntas omitido por brevidade -->
+
+        <!-- Adicione as outras perguntas aqui -->
+        <div class="question" id="question2">
+            <h2>Quem é o criador do Python e em que ano a linguagem foi lançada pela primeira vez?</h2>
+            <ul class="options">
+                <li><input type="radio" name="question2" value="option1"> Guido van Rossum, lançada em 1991.</li>
+                <li><input type="radio" name="question2" value="option2"> Linus Torvalds, lançada em 1989.</li>
+                <li><input type="radio" name="question2" value="option3"> Steve Jobs, lançada em 1995.</li>
+                <li><input type="radio" name="question2" value="option4"> Larry Page, lançada em 2000.</li>
+            </ul>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div class="question" id="question3">
+            <h2>Qual é a diferença entre uma lista e uma tupla em Python?</h2>
+            <ul class="options">
+                <li><input type="radio" name="question3" value="option1"> As listas são imutáveis, enquanto as tuplas são mutáveis.</li>
+                <li><input type="radio" name="question3" value="option2"> As tuplas são imutáveis, enquanto as listas são mutáveis.</li>
+                <li><input type="radio" name="question3" value="option3"> As listas podem conter elementos de diferentes tipos, enquanto as tuplas não podem.</li>
+                <li><input type="radio" name="question3" value="option4"> As tuplas podem ser alteradas após a criação, enquanto as listas não podem.</li>
+            </ul>
+        </div>
+
+        <!-- Pergunta 4 -->
+        <div class="question" id="question4">
+            <h2>O que é uma compreensão de lista em Python e como ela é usada?</h2>
+            <ul class="options">
+                <li><input type="radio" name="question4" value="option1"> É uma técnica para criar listas usando um loop for de maneira mais concisa.</li>
+                <li><input type="radio" name="question4" value="option2"> É uma técnica para verificar se um elemento está presente em uma lista.</li>
+                <li><input type="radio" name="question4" value="option3"> É uma técnica para remover elementos duplicados de uma lista.</li>
+                <li><input type="radio" name="question4" value="option4"> É uma técnica para classificar uma lista em ordem alfabética.</li>
+            </ul>
+        </div>
+
+        <!-- Pergunta 5 -->
+        <div class="question" id="question5">
+            <h2>O que é o Zen do Python e qual é sua importância na comunidade Python?</h2>
+            <ul class="options">
+                <li><input type="radio" name="question5" value="option1"> Um conjunto de princípios filosóficos que guiam o desenvolvimento da linguagem Python.</li>
+                <li><input type="radio" name="question5" value="option2"> Uma ferramenta de debug integrada ao interpretador Python.</li>
+                <li><input type="radio" name="question5" value="option3"> Um framework popular para desenvolvimento web em Python.</li>
+                <li><input type="radio" name="question5" value="option4"> Um mecanismo de virtualização para isolar ambientes de desenvolvimento Python.</li>
+            </ul>
+        </div>
+
+        <!-- Pergunta 6 -->
+        <div class="question" id="question6">
+            <h2>Qual é o objetivo da declaração if __name__ == "__main__": em um script Python?</h2>
+            <ul class="options">
+                <li><input type="radio" name="question6" value="option1"> Definir o nome do módulo principal.</li>
+                <li><input type="radio" name="question6" value="option2"> Testar se o script está sendo executado como um programa principal.</li>
+                <li><input type="radio" name="question6" value="option3"> Verificar a versão do interpretador Python.</li>
+                <li><input type="radio" name="question6" value="option4"> Definir variáveis de ambiente específicas do módulo.</li>
+            </ul>
+        </div>
+
+        <!-- Pergunta 7 -->
+        <div class="question" id="question7">
+            <h2>Qual é a diferença entre os operadores == e is em Python?</h2>
+            <ul class="options">
+                <li><input type="radio" name="question7" value="option1"> == verifica igualdade de valores, enquanto is verifica identidade de objetos.</li>
+                <li><input type="radio" name="question7" value="option2"> Ambos verificam a igualdade de valores.</li>
+                <li><input type="radio" name="question7" value="option3"> Ambos verificam a identidade de objetos.</li>
+                <li><input type="radio" name="question7" value="option4"> == é usado para comparações numéricas, enquanto is é usado para comparações de strings.</li>
+            </ul>
+        </div>
+
+        <!-- Pergunta 8 -->
+        <div class="question" id="question8">
+            <h2>O que é um decorador em Python e para que serve?</h2>
+            <ul class="options">
+                <li><input type="radio" name="question8" value="option1"> Uma função que retorna um valor booleano.</li>
+                <li><input type="radio" name="question8" value="option2"> Um objeto que armazena métodos e atributos de uma classe.</li>
+                <li><input type="radio" name="question8" value="option3"> Uma função que altera o comportamento de outra função.</li>
+                <li><input type="radio" name="question8" value="option4"> Uma estrutura de controle para repetição de código.</li>
+            </ul>
+        </div>
+
+        <!-- Pergunta 9 -->
+        <div class="question" id="question9">
+            <h2>Qual é a função do comando pass em Python?</h2>
+            <ul class="options">
+                <li><input type="radio" name="question9" value="option1"> Finalizar a execução do programa.</li>
+                <li><input type="radio" name="question9" value="option2"> Indicar um ponto de retorno em uma função.</li>
+                <li><input type="radio" name="question9" value="option3"> Ignorar um bloco de código sem fazer nada.</li>
+                <li><input type="radio" name="question9" value="option4"> Inserir um comentário no código fonte.</li>
+            </ul>
+        </div>
+
+        <!-- Pergunta 10 -->
+        <div class="question" id="question10">
+            <h2>Explique o conceito de duck typing em Python.</h2>
+            <ul class="options">
+                <li><input type="radio" name="question10" value="option1"> A prática de definir tipos de dados de patos em um programa.</li>
+                <li><input type="radio" name="question10" value="option2"> A habilidade de um objeto ser usado sem a necessidade de uma verificação explícita de tipo.</li>
+                <li><input type="radio" name="question10" value="option3"> A utilização de bibliotecas de terceiros para manipulação de arquivos de áudio.</li>
+                <li><input type="radio" name="question10" value="option4"> A técnica de otimização de loops em Python.</li>
+            </ul>
+        </div>
+
+        <!-- Pergunta 11 -->
+        <div class="question" id="question11">
+            <h2>Como você converte uma string em um número inteiro em Python?</h2>
+            <ul class="options">
+                <li><input type="radio" name="question11" value="option1"> str_to_int(string)</li>
+                <li><input type="radio" name="question11" value="option2"> int(string)</li>
+                <li><input type="radio" name="question11" value="option3"> string.toInt()</li>
+                <li><input type="radio" name="question11" value="option4"> parse_int(string)</li>
+            </ul>
+        </div>
+
+        <!-- Pergunta 12 -->
+        <div class="question" id="question12">
+            <h2>O que é uma exceção em Python e como você trata exceções?</h2>
+            <ul class="options">
+                <li><input type="radio" name="question12" value="option1"> Um erro que ocorre durante a execução do programa e pode ser tratado usando declarações try e except.</li>
+                <li><input type="radio" name="question12" value="option2"> Um aviso que indica um possível erro de sintaxe no código.</li>
+                <li><input type="radio" name="question12" value="option3"> Um tipo de variável usada para armazenar mensagens de erro.</li>
+                <li><input type="radio" name="question12" value="option4"> Um tipo especial de loop usado para lidar com erros de lógica.</li>
+            </ul>
+        </div>
+
+        <!-- Pergunta 13 -->
+        <div class="question" id="question13">
+            <h2>Qual é a diferença entre os métodos append() e extend() em uma lista em Python?</h2>
+            <ul class="options">
+                <li><input type="radio" name="question13" value="option1"> append() adiciona um elemento à lista, enquanto extend() adiciona uma lista inteira.</li>
+                <li><input type="radio" name="question13" value="option2"> append() remove o último elemento da lista, enquanto extend() adiciona um elemento.</li>
+                <li><input type="radio" name="question13" value="option3"> Ambos os métodos têm o mesmo comportamento.</li>
+                <li><input type="radio" name="question13" value="option4"> append() adiciona uma lista à outra, enquanto extend() adiciona um elemento à lista.</li>
+            </ul>
+        </div>
+
+        <!-- Pergunta 14 -->
+        <div class="question" id="question14">
+            <h2>O que é uma função lambda em Python e em que situações ela é útil?</h2>
+            <ul class="options">
+                <li><input type="radio" name="question14" value="option1"> Uma função especializada em operações matemáticas complexas.</li>
+                <li><input type="radio" name="question14" value="option2"> Uma função definida em uma única linha sem nome usando a palavra-chave lambda.</li>
+                <li><input type="radio" name="question14" value="option3"> Uma função usada para tratar exceções em tempo de execução.</li>
+                <li><input type="radio" name="question14" value="option4"> Uma função que recebe uma lista como entrada e retorna sua média.</li>
+            </ul>
+        </div>
+
+        <!-- Pergunta 15 -->
+        <div class="question" id="question15">
+            <h2>Como você abre e lê o conteúdo de um arquivo em Python?</h2>
+            <ul class="options">
+                <li><input type="radio" name="question15" value="option1"> file.open(filename) e file.read()</li>
+                <li><input type="radio" name="question15" value="option2"> open(filename) e file.read()</li>
+                <li><input type="radio" name="question15" value="option3"> open(filename) e file.read(filename)</li>
+                <li><input type="radio" name="question15" value="option4"> file.open(filename) e filename.read()</li>
+            </ul>
+        </div>
+
+        <!-- Pergunta 16 -->
+        <div class="question" id="question16">
+            <h2>O que é a expressão 'else' usada em um loop 'for' em Python?</h2>
+            <ul class="options">
+                <li><input type="radio" name="question16" value="option1"> É usada para definir um bloco de código que será executado em caso de exceção dentro do loop.</li>
+                <li><input type="radio" name="question16" value="option2"> É usada para definir um bloco de código que será executado quando a condição do loop não for mais verdadeira.</li>
+                <li><input type="radio" name="question16" value="option3"> É usada para parar a execução do loop imediatamente.</li>
+                <li><input type="radio" name="question16" value="option4"> É usada para pular para a próxima iteração do loop.</li>
+            </ul>
+        </div>
+
+        <!-- Pergunta 17 -->
+        <div class="question" id="question17">
+            <h2>O que é uma classe em Python e qual é a sua função?</h2>
+            <ul class="options">
+                <li><input type="radio" name="question17" value="option1"> Uma função especializada em operações matemáticas complexas.</li>
+                <li><input type="radio" name="question17" value="option2"> Um tipo de variável usada para armazenar mensagens de erro.</li>
+                <li><input type="radio" name="question17" value="option3"> Uma estrutura de controle para repetição de código.</li>
+                <li><input type="radio" name="question17" value="option4"> Uma estrutura de dados que pode conter atributos e métodos.</li>
+            </ul>
+        </div>
+
+        <!-- Pergunta 18 -->
+        <div class="question" id="question18">
+            <h2>Como você verifica se uma chave existe em um dicionário em Python?</h2>
+            <ul class="options">
+                <li><input type="radio" name="question18" value="option1"> Usando a função exists(key).</li>
+                <li><input type="radio" name="question18" value="option2"> Usando a função hasKey(key).</li>
+                <li><input type="radio" name="question18" value="option3"> Usando a palavra-chave in.</li>
+                <li><input type="radio" name="question18" value="option4"> Usando a função checkKey(key).</li>
+            </ul>
+        </div>
+
+        <!-- Pergunta 19 -->
+        <div class="question" id="question19">
+            <h2>O que é um módulo em Python e como você importa um módulo?</h2>
+            <ul class="options">
+                <li><input type="radio" name="question19" value="option1"> Um tipo de variável usada para armazenar mensagens de erro.</li>
+                <li><input type="radio" name="question19" value="option2"> Uma estrutura de dados que pode conter atributos e métodos.</li>
+                <li><input type="radio" name="question19" value="option3"> Uma estrutura de controle para repetição de código.</li>
+                <li><input type="radio" name="question19" value="option4"> Um arquivo contendo definições e declarações em Python, importado usando a palavra-chave import.</li>
+            </ul>
+        </div>
+
+        <!-- Pergunta 20 -->
+        <div class="question" id="question20">
+            <h2>Como você escreve um comentário de várias linhas em Python?</h2>
+            <ul class="options">
+                <li><input type="radio" name="question20" value="option1"> /* Este é um comentário de várias linhas */</li>
+                <li><input type="radio" name="question20" value="option2"> // Este é um comentário de várias linhas //</li>
+                <li><input type="radio" name="question20" value="option3"> # Este é um comentário de várias linhas #</li>
+                <li><input type="radio" name="question20" value="option4"> ''' Este é um comentário de várias linhas '''</li>
+            </ul>
+        </div>
+
+        <button class="btn" onclick="calculateScore()">Envie aqui</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function calculateScore() {
+            var score = 0;
+
+            // Verifica as respostas para cada pergunta
+            var answers = document.querySelectorAll('input[type="radio"]:checked');
+
+            // Atribui pontuação com base nas respostas selecionadas
+            for (var i = 0; i < answers.length; i++) {
+                if (answers[i].value === 'option4') {
+                    score++;
+                }
+            }
+
+            // Exibe o resultado
+            var resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = 'Sua pontuação é: ' + score + ' de 20';
+        }
+    </script>
+</body>
+</html>
